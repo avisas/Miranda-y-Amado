@@ -49,7 +49,6 @@ export default () => {
     </div>
     <br/><br/>
 
-
   <div class="borde mt-2">
     <div class="container-client" id="cardComprador" style="overflow-y: scroll;">
       <div class="w-100">
