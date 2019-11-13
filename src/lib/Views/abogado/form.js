@@ -163,7 +163,7 @@ export const form = () => {
   }
 
   sectionElem.querySelector('#send').addEventListener('click', () => {
-    window.location.href = `mailto:${emailDelCliente}?subject=MirandayAmado%20esta%20revisando%20tu%20caso&body=Estimada%20${nombreDelCliente}%20te%20envío%20el%20requerimiento%20de%20información%20para%20el%20proceso%20${nombreDelProyecto}%20https://sarabigail.github.io/LIM010-social-network/src/#/signup`;
+    window.location.href = `mailto:${emailDelCliente}?subject=MirandayAmado%20esta%20revisando%20tu%20caso&body=Estimada%20${nombreDelCliente}%20te%20envío%20el%20requerimiento%20de%20información%20para%20el%20proceso%20${nombreDelProyecto}%20https://rita-gomez.github.io/Miranda-y-Amado/src/index.html`;
       array.forEach(doc => {
         createReq(nombreDelProyecto, doc, nombreDelCliente, emailDelCliente);
       })
