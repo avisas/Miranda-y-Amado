@@ -46,22 +46,22 @@ export const formAbogado = () => {
         <div class="d-flex justify-content-center ml-2">
           <table id="mytable" class="table table-striped">
             <thead style="background-color: #325262; color: white">
-              <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">SUBIR
+              <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white"> BAJAR
               </th>
               <th class="th-client" style="font-size: 0.9rem;background-color: #325262; color: white">LISTADO DE ITEMS
               </th>
               <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">ESTADO
               </th>
               <th class="th-client" style="width: 7%; font-size: 0.9rem; background-color: #325262; color: white"></th>
-            </thead>
-            <tbody>
+              </thead>
+              <tbody>
               <tr class="tr-form-client">
-                <td><i class="fas fa-upload"></i></td>
+                <td><i class="fas fa-upload"> <button type="button" id="download"> Descarga </button> </i></td>
                 <td>xxx</td>
                 <td><i class="fas fa-trash-alt"></i></td>
                 <td><i class="fas fa-check-circle"></i></td>
-              </tr>
-              <tr class="tr-form-client">
+               </tr>
+               <tr class="tr-form-client">
                 <td><i class="fas fa-upload"></i></td>
                 <td>xxx1</td>
                 <td><i class="fas fa-trash-alt"></i></td>
@@ -124,7 +124,26 @@ export const formAbogado = () => {
 
   const sectionElem = document.createElement('section');
   sectionElem.setAttribute('class', 'sec-autentificacion display-flex');
+  sectionElem.setAttribute('data-dismiss', 'modal');
   sectionElem.innerHTML += template; // Hasta que no cree este elemento
+
+  
+const storage = firebase.storage();
+const btnDownload = sectionElem.querySelector('#download');	  
+ const imgRef = storage.ref('1/logosise.png');
+  btnDownload.addEventListener('click', () => {
+    imgRef.updateMetadata({contentDisposition: 'attachment'})
+    .then(() => imgRef.getDownloadURL())
+    .then(function(url) {
+      const ancle = document.createElement('a');
+      anchor.href = url;	           
+    ancle.download = url;
+    ancle.click();	      
+  }).catch(function(error) {
+    console.log(error)
+    // Handle any errors
+  });
+});
   
   return sectionElem;
 };

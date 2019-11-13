@@ -1,3 +1,10 @@
+let array = [];
+
+export const fnc = (arr) => {
+  arr.forEach(doc => array.push(doc)
+  );
+}
+
 export const formCliente = () => {
   const template = `
   <nav class="navbar container text-center navbar-expand-lg colores-nav navbar-white static-top">
@@ -53,11 +60,10 @@ export const formCliente = () => {
 <tbody>
 <tr class="tr-form-client">
 
-  <td id="uploader"> 
-    <input type="file" value="upload" lang="es" id="filebutton">
-  <i class="fas fa-upload">
+  <td> 
+  <i class="fas fa-upload"> <input type="file" value="upload" lang="es" id="uploader"> 
   </i></td>
- <td>xxx</td>
+ <td id="listaDocumentos">xxx</td>
 <td><i class="fas fa-trash-alt"></i></td>
 <td><i class="fas fa-check-circle"></i></td>
 </tr>
@@ -124,8 +130,27 @@ export const formCliente = () => {
   const sectionElem = document.createElement('section');
   sectionElem.setAttribute('class', 'sec-autentificacion display-flex');
   sectionElem.innerHTML += template; // Hasta que no cree este elemento
+  const listaDocumentos = sectionElem.querySelector('#listaDocumentos');
 
-  const uploader = sectionElem.querySelector('uploader');
+  array.forEach(doc => {
+    const list = document.createElement('ul');
+    let acum = '';
+    acum += `
+              <li style="color: #325262;
+              list-style: none;
+              width: max-content;
+              font-weight: 500;">${doc}</li>
+            `;
+    list.innerHTML = `${acum}`;
+    listaDocumentos.appendChild(list);
+  })
+
+  sectionElem.querySelector('#uploader').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    const storageRef = firebase.storage().ref(`Documentos/${file.name}`);
+    const task = storageRef.put(file);
+
+  })
 
   return sectionElem;
 };
