@@ -62,13 +62,13 @@ export const formAbogado = () => {
                 <td><i class="fas fa-check-circle"></i></td>
                </tr>
                <tr class="tr-form-client">
-                <td><i class="fas fa-upload"></i></td>
+                <td><i class="fas fa-download"></i></td>
                 <td>Indecopi</td>
                 <td><i class="fas fa-trash-alt"></i></td>
                 <td><i class="fas fa-check-circle"></i></td>
               </tr>
               <tr class="tr-form-client">
-                <td><i class="fas fa-upload"></i></td>
+                <td><i class="fas fa-download"></i>></td>
                 <td>Plaza Vea denuncia</td>
                 <td><i class="fas fa-trash-alt"></i></td>
                 <td><i class="fas fa-check-circle"></i></td>
