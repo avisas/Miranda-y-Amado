@@ -3,7 +3,7 @@
     /*background-image: linear-gradient(to top, #6A85B6 0%, #BAC8E0 100%), url('imagenes/valorizacion1.jpg');*/
     /*background-image: url('imagenes/valorizacion1.jpg');*/
     background-image: linear-gradient( rgba(174, 190, 202, 0.404),rgb(50,82,98)), 
-    url('/./src/lib/Img/back.jpg');
+    url('https://github.com/Rita-Gomez/Miranda-y-Amado/blob/master/src/lib/Img/back.jpg?raw=true');
     background-size: cover;
     background-position: center;
     height: 100vh;
