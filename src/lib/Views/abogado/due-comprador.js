@@ -87,11 +87,7 @@ export const dueComprador = () => {
 </div>
 </div>
 
-<footer id="sticky-footer" class="py-4 m text-white-50">
-  <div class="container text-center">
-    <small>Copyright &copy; Your Website</small>
-  </div>
-</footer>
+
 </body>
 `
 

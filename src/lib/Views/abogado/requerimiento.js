@@ -69,9 +69,9 @@ export const requerimiento = () => {
 </div>
 </div>
 
-<footer id="sticky-footer" class="py-4 m text-white-50">
+<footer style="width:100vw;margin-botton:-25px!important" id="sticky-footer" class="py-4 m text-white-50">
   <div class="container text-center">
-    <small>Copyright &copy; Your Website</small>
+    <small>Copyright &copy;Miranda y Amado </small>
   </div>
 </footer>
 </body>`;
