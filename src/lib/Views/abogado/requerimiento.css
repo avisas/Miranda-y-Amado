@@ -31,10 +31,6 @@ body {
   border-bottom: 1px solid #325262;
   height: 78px;
   padding: .0 2rem;
-<<<<<<< HEAD
- 
-=======
->>>>>>> d5174e392d3306855963847cbf499ed2c8adbb2f
 }
 #sticky-footer {
   flex-shrink: none;
