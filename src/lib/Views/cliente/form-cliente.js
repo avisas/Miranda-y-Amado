@@ -30,38 +30,74 @@ export const formCliente = () => {
   </div>
 </nav>
 
-
 <div id="page-content">
   <div class="container text-center">
 
-    <div class="texto_uno p-2 mw-80 mb-3">
-      <p class="text-white mb-0 ">SELECCIÓN DE REQUERIMIENTO</p>
-    </div>
   </div>
 </div>
 
-<div class="mx-auto p-4" style="width: 50rem;">
-  <div class="borde">
-    <div class="container" id="cardComprador">
-      <div class="d-flex justify-content-center">
+<div class="mx-auto py-5" style="width: 50rem;">
+<div class="form-row col-md-12 mx-0 px-0">
+<div class="col-md-6">DUE DILLIGENCE DE VENDEDOR</div>
+<div class="col-md-6"><div class="progress float-right">
+<div class="progress-bar bg-info" style="width:30%">30%</div>
+</div>
+</div>
+</div>
+  <div class="borde mt-2">
+    <div class="container-client" id="cardComprador" style="overflow-y: scroll;">
+      <div class="d-flex justify-content-center ml-2">
+        <table id="mytable" class="table table-striped">
+        <thead style="background-color: #325262; color: white">
+        <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">SUBIR</th>
+        <th class="th-client" style="font-size: 0.9rem;background-color: #325262; color: white">LISTADO DE ITEMS</th>
+        <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">ESTADO</th>
+        <th class="th-client" style="width: 7%; font-size: 0.9rem; background-color: #325262; color: white"></th>
+        </thead>
+<tbody>
+<tr class="tr-form-client">
+<td><i class="fas fa-upload"></i></td>
+<td>xxx</td>
+<td><i class="fas fa-trash-alt"></i></td>
+<td><i class="fas fa-check-circle"></i></td>
+</tr>
+<tr class="tr-form-client">
+<td><i class="fas fa-upload"></i></td>
+<td>xxx1</td>
+<td><i class="fas fa-trash-alt"></i></td>
+<td><i class="fas fa-check-circle"></i></td>
+</tr>
+<tr class="tr-form-client">
+<td><i class="fas fa-upload"></i></td>
+<td>xxx2</td>
+<td><i class="fas fa-trash-alt"></i></td>
+<td><i class="fas fa-check-circle"></i></td>
+</tr>
+</tbody>
+</table>
         
-    -----
-
       </div>
+      
     </div>
+    
+  </div>
+  <div class="col-md-12 float-right py-2 px-0 mx-0">
+  <button class="btn w-25 float-right text-white" style="background-color: #F37A00">GRABAR</button>
+  <button class="btn w-25 float-right text-white mr-3" style="background-color: #F37A00">ENVIAR</button>
   </div>
 
 </div>
 </div>
-</div>
-</div>
-
-</div>
-
 
 </div>
 </div>
 
+</div>
+
+
+</div>
+
+</div>
 <footer id="sticky-footer" class="py-4 m text-white-50">
   <div class="container text-center">
     <small>Copyright &copy; Your Website</small>
