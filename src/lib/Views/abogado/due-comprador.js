@@ -156,7 +156,8 @@ export const dueComprador = () => {
     .catch((err) => console.log('error', err));
 
   const continuar = sectionElem.querySelector('#continuar');
-  continuar.addEventListener('click', () => {
+  continuar.addEventListener('click', (e) => {
+    console.log('t', e.target)
     fn(array);
   });
 
