@@ -121,6 +121,7 @@ export const formAbogado = () => {
   </body>
   
 `;
+
   const sectionElem = document.createElement('section');
   sectionElem.setAttribute('class', 'sec-autentificacion display-flex');
   sectionElem.innerHTML += template; // Hasta que no cree este elemento
