@@ -40,7 +40,7 @@ export const formCliente = () => {
 
 <div class="mx-auto py-5" style="width: 50rem;">
   <div class="form-row col-md-12 mx-0 px-0">
-    <div class="col-md-6 font-weight-bold">DUE DILLIGENCE DE VENDEDOR</div>
+    <div class="col-md-6 font-weight-bold">DUE DILIGENCE DE COMPRADOR</div>
     <div class="col-md-6">
       <div class="progress float-right">
         <div class="progress-bar bg-info" style="width:30%">30%</div>
@@ -63,7 +63,7 @@ export const formCliente = () => {
   <td> 
   <i class="fas fa-upload"> <input type="file" value="upload" lang="es" id="uploader"> 
   </i></td>
- <td id="listaDocumentos">xxx</td>
+ <td id="listaDocumentos">cartanotarial_mef.doc</td>
 <td><i class="fas fa-trash-alt"></i></td>
 <td><i class="fas fa-check-circle"></i></td>
 </tr>
