@@ -13,13 +13,20 @@
   padding-top: 0 ;
   padding-bottom: 0 ;
 }
+.bton{
+  background-color: orange;
+  border: none;
 
+}
 div.table-title {
    display: block;
   max-width: 600px;
   width: 100%;
 }
-
+.posicion{
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 
 input[type=checkbox] { 

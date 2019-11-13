@@ -38,11 +38,11 @@ export const dueVendedor = () => {
 </nav>
 
 
-<div class="page-content" id="page-content">
+<div  id="page-content">
   <div class="container text-left">
 
-        <div class="texto_uno p-2 mw-80 mb-3">
-          <p class="text-white mb-0 ">DUE DILIGENCE PARA VENDEDOR</p>
+        <div class="mt-4 mw-80 mb-3">
+          <p style="color: #325262;font-size:1.1rem;"class="font-weight-bold mb-0 ">DUE DILIGENCE PARA VENDEDOR</p>
         </div>
       </div>
     </div>
@@ -59,7 +59,7 @@ export const dueVendedor = () => {
                   <th class="bg-white text-center">
                     <input type="checkbox" id="checkall" />
                   </th>
-                  <th class="bg-white text-left font-weight-normal text-dark">DOCUMENTOS SUGERIDOS</th>
+                  <th style="font-size:15px;"class="bg-white text-left font-weight-bolder text-dark">DOCUMENTOS SUGERIDOS</th>
                   </tr>
                 </thead>
                 <tbody class="table-hover" id ="contenedor">
@@ -79,9 +79,9 @@ export const dueVendedor = () => {
   
       </div>
      
-      <div>
-      <a href="#/requerimiento"> <button> Volver </button> </a>
-      <a href="#/confirmacion-requerimientos"> <button id="continuar"> Continuar </button> </a> 
+      <div class="col-md-12 mx-0 px-0">
+      <a href="#/requerimiento "> <button class="bton"> Volver </button> </a>
+      <a href="#/confirmacion-requerimientos"> <button class="bton" id="continuar"> Continuar </button> </a> 
   
    </div>
 </div>
