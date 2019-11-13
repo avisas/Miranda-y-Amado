@@ -1,6 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
-
+.nuevo{
+  color : black;
+  background-color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight : lighter ;
+}
+.color{
+  color: #22262e;
+  font-weight : normal;
+  padding-top: 0 ;
+  padding-bottom: 0 ;
+}
 
 div.table-title {
    display: block;
