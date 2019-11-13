@@ -33,7 +33,7 @@ export default () => {
               </div>
           </div>
           <div class="d-flex justify-content-center mt-3 login_container">
-              <button class="btn login_btn font-weight-bold mx-4" id="btn-iniciar-registrar" data-action ='login'>INGRESAR</button>
+                <button class="btn login_btn font-weight-bold mx-4" id="btn-iniciar-registrar" data-action ='login'>INGRESAR</button>
           </div>
       </div>
   </div>

@@ -74,14 +74,15 @@ export const form = () => {
             </form>
           </div>
         </div>
-        <button style="position: relative;
+        <a href="#/formAbogado"> <button style="position: relative;
         background-color: #325262;
         border: none;
         padding: 0.5em 1.5em;
         margin: 1em auto;
         width: max-content;
         left: 7em;
-        top: -2em;" class="btn-lf btn-primary btn-block text-uppercase" id="send" type="button"  data-toggle="modal" data-target="#exampleModal">Enviar</button>
+        top: -2em;" class="btn-lf btn-primary btn-block text-uppercase" id="send" type="button"  data-toggle="modal" data-target="#exampleModal">Enviar</button> 
+        </a>
       </div>
     </div>
   </div>
