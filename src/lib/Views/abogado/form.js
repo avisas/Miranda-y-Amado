@@ -14,7 +14,7 @@ export const form = () => {
         top: 2em;
         color: #325262;
         font-size: 1.2em;
-        font-weight: 300;">DUE DILIGENCE DEL VENDEDOR</p>
+        font-weight: bolder;">DUE DILIGENCE DEL VENDEDOR</p>
         <div style="border: solid 1px #f37a00;
           width: max-content;
           height: max-content;

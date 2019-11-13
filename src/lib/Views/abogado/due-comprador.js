@@ -40,11 +40,11 @@ export const dueComprador = () => {
 </nav>
 
 
-<div class="page-content"id="page-content">
+<div id="page-content">
   <div class="container text-left">
 
-        <div class="texto_uno  p-2 mw-80 mb-3">
-          <p class="text-white mb-0 ">DUE DILIGENCE PARA COMPRADOR</p>
+        <div class=" p-2 mw-80 mb-3">
+          <p class="text-dark font-weight-bolder mb-0 ">DUE DILIGENCE PARA COMPRADOR</p>
         </div>
       </div>
     </div>
@@ -70,11 +70,6 @@ export const dueComprador = () => {
 
    
 
-            <div>
-               <a href="#/requerimiento"> <button> Volver </button> </a>
-               <a href="#/confirmacion-requerimientos"> <button id="continuar"> Continuar </button> </a> 
-
-            </div>
           </div>
         </div>
       </div>
@@ -83,6 +78,11 @@ export const dueComprador = () => {
   
       </div>
      
+      <div>
+      <a href="#/requerimiento"> <button class=" px-1 py-1 bton"> Volver </button> </a>
+      <a href="#/confirmacion-requerimientos"> <button class="px-1 py-1 bton" id="continuar"> Continuar </button> </a> 
+
+   </div>
 
 </div>
 </div>

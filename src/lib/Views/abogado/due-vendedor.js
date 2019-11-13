@@ -74,7 +74,6 @@ export const dueVendedor = () => {
       </div>
   
     </div>
- 
         </div>
   
       </div>
