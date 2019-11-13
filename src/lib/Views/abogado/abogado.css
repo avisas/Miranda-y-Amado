@@ -1,0 +1,23 @@
+
+.button-req {
+  display: inline-block;
+  padding: .3rem .6rem;
+  text-align: center;
+  color: #f8f9fa;
+  background-color: sienna;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+}
+.list {
+  list-style-type:disc;
+}
+.last-req {
+  font-size: 20px;
+}
