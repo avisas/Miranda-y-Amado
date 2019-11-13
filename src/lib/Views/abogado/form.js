@@ -101,7 +101,7 @@ export const form = () => {
       <h5 class="modal-title" id="exampleModalLabel">¡Requerimiento enviado correctamente!</h5> 
       </div>
       <div class="modal-footer">
-       <a href="#/formAbogado"><button type="button" class="btn btn-secondary"> Cerrar </button> </a>
+       <a href="#/formAbogado"><button type="button" class="btn btn-secondary" id="equis"> Cerrar </button> </a>
       </div>
     </div>
   </div>
@@ -159,6 +159,7 @@ export const form = () => {
       array.forEach(doc => {
         createReq(nombreDelProyecto, doc, nombreDelCliente, emailDelCliente);
       })
+      listaDocumentos.innerHTML = "";
   });
 
   return sectionElem;
