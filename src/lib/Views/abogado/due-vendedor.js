@@ -67,20 +67,23 @@ export const dueVendedor = () => {
               </table>
   
 
-            <div>
-               <a href="#/requerimiento"> <button> Volver </button> </a>
-               <a href="#/confirmacion-requerimientos"> <button id="continuar"> Continuar </button> </a> 
-
-            </div>
+           
           
         </div>
+
       </div>
+  
     </div>
+ 
         </div>
   
       </div>
      
-
+      <div>
+      <a href="#/requerimiento"> <button> Volver </button> </a>
+      <a href="#/confirmacion-requerimientos"> <button id="continuar"> Continuar </button> </a> 
+  
+   </div>
 </div>
 </div>
 

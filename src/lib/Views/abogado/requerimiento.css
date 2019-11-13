@@ -31,11 +31,44 @@ body {
   border-bottom: 1px solid #325262;
   height: 78px;
   padding: .0 2rem;
-<<<<<<< HEAD
  
-=======
->>>>>>> d5174e392d3306855963847cbf499ed2c8adbb2f
 }
 #sticky-footer {
   flex-shrink: none;
 }
+body {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	
+}
+.boton{
+  background:  #F37A00;
+  border-bottom: 5px solid #e3e7ec;
+  box-shadow: 6px 6px 6px #999;
+  color: #fff;
+  cursor: pointer;
+  display: block;  
+  font-family: 'Raleway', Arial, Helvetica;
+  font-size: 18px;
+  height: 50%;
+  margin: 80px auto;
+  padding: 20px 20px;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+  width: 60%;
+}
+.boton:hover{
+	background: #325262;
+}
+.boton:active {
+	box-shadow: 2px 2px 2px rgb(28, 68, 87), 0px 0px 35px 0px #0f5a75;
+	border-bottom:1px solid rgb(245, 245, 245);
+  text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+	transform: translateY(4px);
+  transition: all 0.1s ease 0s;
+  margin: 80px auto 76px auto;
+}
+

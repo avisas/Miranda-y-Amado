@@ -45,12 +45,13 @@ export const requerimiento = () => {
         <div>
           <div class="p-5"><a href="#/dueComprador">
           <button type="submit" style="box-shadow: 2px 2px 7px rgba(56, 54, 54, 0.86);border:none;border-radius:2.5px;font-weight :bold;" class="paddin text-white"
-                id="due-comprador">DUE DILLIGENCE
-                COMPRADOR</button></a></div>
+                id="due-comprador">DUE DILIGENCE
+                COMPRADOR</button></a>
+                </div>
         </div>
         <div>
           <div class="p-5"> <a  href="#/dueVendedor"><button style="box-shadow: 2px 2px 7px rgba(56, 54, 54, 0.86);border:none;border-radius:2.5px; font-weight :bold;" type="submit" class="paddin text-white"
-                id="due-vendedor">DUE DILLIGENCE
+                id="due-vendedor">DUE DILIGENCE
                 VENDEDOR</button></a></div>
         </div>
       </div>

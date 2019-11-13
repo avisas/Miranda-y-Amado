@@ -32,7 +32,6 @@ input[type=checkbox] {
   border-collapse: collapse;
   height: 320px;
   margin: auto;
-  max-width: 600px;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);

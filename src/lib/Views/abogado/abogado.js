@@ -39,7 +39,8 @@ export default () => {
         <p class="text-dark font-weight-bold mb-0 ">SELECCIÓN DE REQUERIMIENTO</p>
       </div>
       <div class="text-left">
-    <a href="#/requerimiento" style="font-size:0.9rem;width : 30%;"class="color-a py-2 px-2 font-weight-bold text-white text-center">NUEVO REQUERIMIENTO</a>
+    <a href="#/requerimiento" style="font-size:0.9rem;width : 40%;"class="color-a py-2 px-2 font-weight-bold text-white text-center">
+    NUEVO REQUERIMIENTO <i class="fas fa-plus-square"></i></a>
     </div>
     </div>
   </div>
