@@ -61,7 +61,7 @@ export const dueComprador = () => {
                   <th class="bg-white text-center">
                     <input type="checkbox" id="checkall" />
                   </th>
-                  <th class="bg-white font-weight-normal text-dark">DOCUMENTO</th>
+                  <th class="bg-white font-weight-normal text-dark">DOCUMENTOS SUGERIDOS:</th>
                   </tr>
                 </thead>
                 <tbody class="table-hover" id ="contenedor">

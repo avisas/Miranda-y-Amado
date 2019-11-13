@@ -56,8 +56,12 @@ export const formCliente = () => {
         </thead>
 <tbody>
 <tr class="tr-form-client">
-<td><i class="fas fa-upload"></i></td>
-<td>xxx</td>
+
+  <td id="uploader"> 
+    <input type="file" value="upload" lang="es" id="filebutton">
+  <i class="fas fa-upload">
+  </i></td>
+ <td>xxx</td>
 <td><i class="fas fa-trash-alt"></i></td>
 <td><i class="fas fa-check-circle"></i></td>
 </tr>
@@ -108,6 +112,8 @@ export const formCliente = () => {
   const sectionElem = document.createElement('section');
   sectionElem.setAttribute('class', 'sec-autentificacion display-flex');
   sectionElem.innerHTML += template; // Hasta que no cree este elemento
+
+  const uploader = sectionElem.querySelector('uploader');
 
   return sectionElem;
 };
