@@ -1,4 +1,3 @@
-
 let array = [];
 
 export const fn = (arr) => {
@@ -75,14 +74,15 @@ export const form = () => {
             </form>
           </div>
         </div>
-        <button style="position: relative;
+        <a href="#/"> <button style="position: relative;
         background-color: #325262;
         border: none;
         padding: 0.5em 1.5em;
         margin: 1em auto;
         width: max-content;
         left: 7em;
-        top: -2em;" class="btn-lf btn-primary btn-block text-uppercase" id="send" type="button"  data-toggle="modal" data-target="#exampleModal">Enviar</button>
+        top: -2em;" class="btn-lf btn-primary btn-block text-uppercase" id="send" type="button"  data-toggle="modal" data-target="#exampleModal"> Cerrar Sesión </button> 
+        </a>
       </div>
     </div>
   </div>
@@ -93,7 +93,7 @@ export const form = () => {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -101,7 +101,7 @@ export const form = () => {
       <h5 class="modal-title" id="exampleModalLabel">¡Requerimiento enviado correctamente!</h5> 
       </div>
       <div class="modal-footer">
-       <a href="#/abogado"> <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cerrar  </button> </a>
+       <a href="#/formAbogado"><button type="button" class="btn btn-secondary"> Cerrar </button> </a>
       </div>
     </div>
   </div>

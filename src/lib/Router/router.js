@@ -25,6 +25,9 @@ export const viewTemplate = (routes) => {
     case '#/confirmacion-requerimientos':
       container.appendChild(components.form());
       break;
+    case '#/formAbogado':
+      container.appendChild(components.formAbogado());
+      break;
     case '#/formCliente':
       container.appendChild(components.formCliente());
       break;
