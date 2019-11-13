@@ -2,7 +2,7 @@ import { signIn } from '../Controller/a-controll.js';
 
 export default () => {
   const template = `
-  <form>
+  <form style="width: 100vw;">
   <div class="container h-100">
   <div class="d-flex justify-content-center">
       <div class="user_card">
