@@ -38,8 +38,8 @@ export const dueVendedor = () => {
 </nav>
 
 
-<div id="page-content">
-  <div class="container text-center">
+<div class="page-content" id="page-content">
+  <div class="container text-left">
 
         <div class="texto_uno p-2 mw-80 mb-3">
           <p class="text-white mb-0 ">DUE DILIGENCE PARA VENDEDOR</p>
@@ -59,7 +59,7 @@ export const dueVendedor = () => {
                   <th class="bg-white text-center">
                     <input type="checkbox" id="checkall" />
                   </th>
-                  <th class="bg-white font-weight-normal text-dark">DOCUMENTO</th>
+                  <th class="bg-white text-left font-weight-normal text-dark">DOCUMENTOS SUGERIDOS</th>
                   </tr>
                 </thead>
                 <tbody class="table-hover" id ="contenedor">

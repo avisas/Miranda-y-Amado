@@ -15,6 +15,23 @@
   border: 1px solid transparent;
   transition: all 500ms ease;
 }
+.color-a{
+ background-color:  #F37A00;
+}
+.page-content{
+  width: 50rem;
+  margin-left: 13rem;
+}
+.pad {
+  margin-left: 13rem;
+}
+.texto_uno{
+  width: 20rem;
+  padding: .25rem 1.25rem;
+  margin-top: 22px;
+  background-color:#325262 ;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
 .list {
   list-style-type:disc;
 }

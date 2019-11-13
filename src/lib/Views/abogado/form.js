@@ -70,6 +70,7 @@ export const form = () => {
                 background-color: white;
                 border: solid 1.2px #325262;" placeholder="Mensaje" disabled>Estimado(a) Envio el requerimiento de imformación para el proceso </textarea>
               </div>
+              <button class="btn-lf btn-primary btn-block text-uppercase" id="send" type="button"  data-toggle="modal" data-target="#exampleModal">Enviar</button>
               <hr class="my-4">
             </form>
           </div>

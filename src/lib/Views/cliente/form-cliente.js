@@ -45,36 +45,38 @@ export const formCliente = () => {
     <div class="container-client" id="cardComprador" style="overflow-y: scroll;">
       <div class="d-flex justify-content-center ml-2">
         <table id="mytable" class="table table-striped">
-          <thead style="background-color: #325262; color: white">
-            <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">SUBIR
-            </th>
-            <th class="th-client" style="font-size: 0.9rem;background-color: #325262; color: white">LISTADO DE ITEMS
-            </th>
-            <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">ESTADO
-            </th>
-            <th class="th-client" style="width: 7%; font-size: 0.9rem; background-color: #325262; color: white"></th>
-          </thead>
-          <tbody>
-            <tr class="tr-form-client">
-              <td><i class="fas fa-upload"></i></td>
-              <td>xxx</td>
-              <td><i class="fas fa-trash-alt"></i></td>
-              <td><i class="fas fa-check-circle"></i></td>
-            </tr>
-            <tr class="tr-form-client">
-              <td><i class="fas fa-upload"></i></td>
-              <td>xxx1</td>
-              <td><i class="fas fa-trash-alt"></i></td>
-              <td><i class="fas fa-check-circle"></i></td>
-            </tr>
-            <tr class="tr-form-client">
-              <td><i class="fas fa-upload"></i></td>
-              <td>xxx2</td>
-              <td><i class="fas fa-trash-alt"></i></td>
-              <td><i class="fas fa-check-circle"></i></td>
-            </tr>
-          </tbody>
-        </table>
+        <thead style="background-color: #325262; color: white">
+        <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">SUBIR</th>
+        <th class="th-client" style="font-size: 0.9rem;background-color: #325262; color: white">LISTADO DE ITEMS</th>
+        <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">ESTADO</th>
+        <th class="th-client" style="width: 7%; font-size: 0.9rem; background-color: #325262; color: white"></th>
+        </thead>
+<tbody>
+<tr class="tr-form-client">
+
+  <td id="uploader"> 
+    <input type="file" value="upload" lang="es" id="filebutton">
+  <i class="fas fa-upload">
+  </i></td>
+ <td>xxx</td>
+<td><i class="fas fa-trash-alt"></i></td>
+<td><i class="fas fa-check-circle"></i></td>
+</tr>
+<tr class="tr-form-client">
+<td><i class="fas fa-upload"></i></td>
+<td>xxx1</td>
+<td><i class="fas fa-trash-alt"></i></td>
+<td><i class="fas fa-check-circle"></i></td>
+</tr>
+<tr class="tr-form-client">
+<td><i class="fas fa-upload"></i></td>
+<td>xxx2</td>
+<td><i class="fas fa-trash-alt"></i></td>
+<td><i class="fas fa-check-circle"></i></td>
+</tr>
+</tbody>
+</table>
+        
       </div>
     </div>
   </div>
@@ -123,6 +125,8 @@ export const formCliente = () => {
   const sectionElem = document.createElement('section');
   sectionElem.setAttribute('class', 'sec-autentificacion display-flex');
   sectionElem.innerHTML += template; // Hasta que no cree este elemento
+
+  const uploader = sectionElem.querySelector('uploader');
 
   return sectionElem;
 };
