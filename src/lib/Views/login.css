@@ -2,8 +2,7 @@
     /*background-image: linear-gradient(45deg, #93A5CF 0%, #E4EFE9 100%);*/
     /*background-image: linear-gradient(to top, #6A85B6 0%, #BAC8E0 100%), url('imagenes/valorizacion1.jpg');*/
     /*background-image: url('imagenes/valorizacion1.jpg');*/
-    background-image: linear-gradient( rgba(174, 190, 202, 0.404),rgb(50,82,98)), 
-    url('https://github.com/Rita-Gomez/Miranda-y-Amado/blob/master/src/lib/Img/back.jpg?raw=true');
+    background-image: linear-gradient( rgba(174, 190, 202, 0.404),rgb(50,82,98)), url('https://raw.githubusercontent.com/Rita-Gomez/Miranda-y-Amado/master/src/lib/Img/back.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
