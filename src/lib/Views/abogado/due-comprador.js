@@ -1,4 +1,3 @@
-
 import {
   verRequerimientos
 } from '../../Model/firebase-db.js'
@@ -131,7 +130,7 @@ export const dueComprador = () => {
           let acum = '';
           acum += `
                   <td class="text-center px-3">
-                    <input type="checkbox" value="${doc.value}" class="checkthis" />
+                    <input type="checkbox" value="${doc.value}" class="checkthis" id="${doc.value}"/>
 
                   </td>
                   <td class="text-left">
