@@ -30,26 +30,26 @@ export const requerimiento = () => {
 </nav>
 
 
-<div id="page-content">
-  <div class="container text-center">
+<div  id="page-content">
+  <div class="container text-center col-md-12 pt-4">
 
-    <div class="texto_uno p-2 mw-80 mb-3">
-      <p class="text-white mb-0 ">SELECCIÓN DE REQUERIMIENTO</p>
-    </div>
+     <span class="mb-0 color font-weight-bold">SELECCIONA TU REQUERIMIENTO</span>
+   
   </div>
 </div>
 
 <div class="mx-auto p-4" style="width: 50rem;">
   <div class="borde">
-    <div class="container" id="cardComprador">
+    <div class="containe mt-4" id="cardComprador">
       <div class="d-flex justify-content-center">
         <div>
-          <div class="p-5"><a href="#/dueComprador"><button type="submit" class="paddin text-white"
+          <div class="p-5"><a href="#/dueComprador">
+          <button type="submit" style="box-shadow: 2px 2px 7px rgba(56, 54, 54, 0.86);border:none;border-radius:2.5px;font-weight :bold;" class="paddin text-white"
                 id="due-comprador">DUE DILLIGENCE
                 COMPRADOR</button></a></div>
         </div>
         <div>
-          <div class="p-5"> <a href="#/dueVendedor"><button type="submit" class="paddin text-white"
+          <div class="p-5"> <a  href="#/dueVendedor"><button style="box-shadow: 2px 2px 7px rgba(56, 54, 54, 0.86);border:none;border-radius:2.5px; font-weight :bold;" type="submit" class="paddin text-white"
                 id="due-vendedor">DUE DILLIGENCE
                 VENDEDOR</button></a></div>
         </div>

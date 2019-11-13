@@ -1,64 +1,147 @@
 
 export default () => {
   const template = `
-  <div id="actualizar">
+  <!-- Navigation -->
+  <nav class="navbar container text-center navbar-expand-lg colores-nav navbar-white static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+      <img class="img" src="./lib/Img/Logo-principal---colores-web.png" alt="">
+  
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li>
+          <img src="./lib/Img/avatar1.png">
+          </li>
+          <li class="nav-item active">
+            <p class=" px-2 text-dark">Antonia</p>
+          </li>
+          <li>
+          <img src="./lib/Img/flecha.png">
+  
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div class="page-content"id="page-content">
+    <div class="container text-left">
+  
+      <div class=" p-2 mb-3">
+        <p class="text-dark font-weight-bold mb-0 ">SELECCIÓN DE REQUERIMIENTO</p>
+      </div>
+      <div class="text-left">
+    <a href="#/requerimiento" style="font-size:0.9rem;width : 30%;"class="color-a py-2 px-2 font-weight-bold text-white text-center">NUEVO REQUERIMIENTO</a>
+    </div>
+    </div>
+  </div>
+  
+  <div class="mx-auto p-4" style="width: 50rem;">
+    <div class="borde">
+      <div class="container px-0" id="cardComprador">
+    
+        <div class="d-flex justify-content-center">
+          <div>
+         
+          <div class="row">
+
+
+            <table id="mytable" style = "width : 45rem ;" class="table table-bordred table-striped">
+
+              <thead >
+                <th class="nuevo px-2 ">Fecha</th>
+                <th class="nuevo px-2">Cliente</th>
+                <th class="nuevo px-2">Asunto</th>
+                <th class="nuevo px-2">Estado</th>
+
+              </thead>
+              <tbody>
+
+                <tr class="mt-0 p-0">
+                  <td class="color mb-0 " >28 may</td>
+                  <td class="color">RIPLEY</td>
+                  <td class="color">Due Diligence Comprador</td>
+                  <td>
+        <p class="progress"><span class="progress-bar bg-warning" style="width :45%">45%</span></p>
+                  </td>
+                 
+                </tr>
+
+                <tr>
+                  <td class="color">28 may</td>
+                  <td class="color">RIPLEY</td>
+                  <td class="color">Indecopi</td>
+                  <td>
+                  <p class="progress"><span class="progress-bar bg-success" style="width :100%">100%</span></p>
+                </td>
+                 
+                </tr>
+
+                <tr>
+                  <td class="color">28 may</td>
+                  <td class="color">PLAZA VEA</td>
+                  <td class="color">Due Diligence</td>
+                  <td>
+                  <p class="progress"><span class="progress-bar bg-danger" style="width :10%">5%</span></p>
+                </td>
+                 
+                </tr>
+
+                <tr>
+                  <td class="color">10 enero</td>
+                  <td class="color">MUEBLES SAC</td>
+                  <td class="color">Due Diligence</td>
+                  <td>
+                  <p class="progress"><span class="progress-bar bg-warning" style="width :70%">70%</span></p>
+                  </td>
+                </tr>
+
+
+              </tbody>
+
+
+          </div>
+        </div>
+          <div>
+        </div>
+      
+    </div>
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+  
   
   </div>
 
-  <div>
-  <div>
-  <a href="#/requerimiento" class="button-req">Crear Requerimiento</a>
   </div>
-    <p class="last-req"><strong>Revisa tus últimos Requerimientos</strong></p>
-    <ul>
-      <li class="list">
-        <a class="list-req" href="#clienteprueba">Proyecto A</a>
-      </li>
-      <li class="list">
-        <a class="list-req" href="#proyecto B">Proyecto B</a>
-      </li>
-      <li class="list">
-        <a class="list-req" href="#proyecto C">Proyecto C</a>
-      </li>
-    </ul>
-  </div>
- 
-  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-  <div class="container text-center">
-    <small>Copyright &copy; Your Website</small>
-  </div>
-</footer>
+  
+
+  </body>
     `;
 
   const sectionElem = document.createElement('section');
   sectionElem.setAttribute('class', 'sec-autentificacion display-flex');
   sectionElem.innerHTML += template; // Hasta que no cree este elemento
 
-    // const getRequiremnts = (id) => {
-  //   const req = firebase.firestore().collection('caso 1').doc(id).get();
-  //   console.log(req);
-  // }
-  // getRequiremnts('Relacion de inmuebles');
-  // const getRequiremnts = () => {
-  //   const req = firebase.firestore().collection('AllCases').doc('cada caso').get()
-  //     .then((doc) => {
-  //       if (doc.exists) {
-  //         console.log("Document data:", doc);
-  //       } else {
-  //         // doc.data() will be undefined in this case
-  //         console.log("No such document!");
-  //       }
-  //     }).catch(function (error) {
-  //       console.log("Error getting document:", error);
-  //     });
-  // }
  const  getReq = () => {
   firebase.firestore().collection('AllCases').doc('cada caso').collection('Apelacion')
     .onSnapshot((querySnapshot) => {
       const comment = [];
       querySnapshot.forEach((doc) => {
         console.log(doc.data())
-        //comment.push({ idPost, id: doc.id, ...doc.data() });
+        
       });
       // pintarComentario(comment);
     });
@@ -66,14 +149,5 @@ export default () => {
 getReq()
 return sectionElem;
 };
-// var name, email, photoUrl, uid, emailVerified;
-// if (user != null) {
-//   name = user.displayName;
-//   email = user.email;
-//   photoUrl = user.photoURL;
-//   emailVerified = user.emailVerified;
-//   uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-//                    // this value to authenticate with your backend server, if
-//                    // you have one. Use User.getToken() instead.
-// }
+
  
