@@ -21,7 +21,6 @@ export const formCliente = () => {
         </li>
         <li>
           <img src="./lib/Img/flecha.png">
-
         </li>
       </ul>
     </div>

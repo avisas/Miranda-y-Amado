@@ -38,3 +38,13 @@
 .last-req {
   font-size: 20px;
 }
+
+.th-client {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.tr-form-client {
+  color: slategrey;
+  cursor: pointer;
+}
