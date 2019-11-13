@@ -13,11 +13,11 @@ export const form = () => {
       <div class="col-lg-10 col-xl-9 mx-auto">
         <div class="card card-signin flex-row my-5">
           <div class="card-img-left d-none d-md-flex">
-          <p> Documentos Seleccionados </p>
+          <p clas="titulo"> DOCUMENTOS SELECCIONADOS</p>
           
-          <ol id="listaDocumentos">
+          <div id="listaDocumentos">
              
-          </ol>
+          </div>
 
           </div>
           <div class="card-body">
@@ -40,9 +40,10 @@ export const form = () => {
                 
               </div>
               <div class="form-label-group">
-                <textarea class="form-control" placeholder="Mensaje" disabled>Estimado(a)<br/> Envio el requerimiento de imformación para el proceso </textarea>
+                <textarea class="form-control" placeholder="Mensaje" disabled>Estimado(a) Envio el requerimiento de imformación para el proceso </textarea>
               </div>
-              <button class="btn-lf btn-primary btn-block text-uppercase" type="button" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+              <button type="button" >Enviar</button>
+              <button class="btn-lf btn-primary btn-block text-uppercase" id="send" type="button"  data-toggle="modal" data-target="#exampleModal">Enviar</button>
               <hr class="my-4">
             </form>
           </div>
@@ -65,7 +66,7 @@ export const form = () => {
       <h5 class="modal-title" id="exampleModalLabel">¡Requerimiento enviado correctamente!</h5> 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <a href="#/abogado"> <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cerrar  </button> </a>
       </div>
     </div>
   </div>
@@ -77,7 +78,7 @@ export const form = () => {
   const listaDocumentos = sectionElem.querySelector('#listaDocumentos');
 
   array.forEach(doc => {
-    const list = document.createElement('li');
+    const list = document.createElement('ol');
     let acum = '';
     acum += `
               <li>${doc}</li>
@@ -108,9 +109,10 @@ export const form = () => {
 
   const createReq = (caso, item, nombre, email) => {
     firebase.firestore().collection(caso).doc(item).set({
-      Cliente: nombre,
       Estado: 'pendiente',
       Correo: email,
+      timeReq: new Date(),
+      Documento: item,
     })
   }
 

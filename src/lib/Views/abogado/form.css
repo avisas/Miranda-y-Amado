@@ -129,3 +129,11 @@ body {
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
+
+.titulo{
+  padding: 3em;
+  position: relative;
+  top: 2em;
+  color: #F37a00;
+  font-size: 1.2em;
+}

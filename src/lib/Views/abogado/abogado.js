@@ -1,5 +1,10 @@
+
 export default () => {
   const template = `
+  <div id="actualizar">
+  
+  </div>
+
   <div>
   <div>
   <a href="#/requerimiento" class="button-req">Crear Requerimiento</a>
@@ -7,7 +12,7 @@ export default () => {
     <p class="last-req"><strong>Revisa tus últimos Requerimientos</strong></p>
     <ul>
       <li class="list">
-        <a class="list-req" href="#proyecto A">Proyecto A</a>
+        <a class="list-req" href="#clienteprueba">Proyecto A</a>
       </li>
       <li class="list">
         <a class="list-req" href="#proyecto B">Proyecto B</a>
@@ -24,11 +29,51 @@ export default () => {
   </div>
 </footer>
     `;
+
   const sectionElem = document.createElement('section');
   sectionElem.setAttribute('class', 'sec-autentificacion display-flex');
   sectionElem.innerHTML += template; // Hasta que no cree este elemento
 
- 
-
-  return sectionElem;
+    // const getRequiremnts = (id) => {
+  //   const req = firebase.firestore().collection('caso 1').doc(id).get();
+  //   console.log(req);
+  // }
+  // getRequiremnts('Relacion de inmuebles');
+  // const getRequiremnts = () => {
+  //   const req = firebase.firestore().collection('AllCases').doc('cada caso').get()
+  //     .then((doc) => {
+  //       if (doc.exists) {
+  //         console.log("Document data:", doc);
+  //       } else {
+  //         // doc.data() will be undefined in this case
+  //         console.log("No such document!");
+  //       }
+  //     }).catch(function (error) {
+  //       console.log("Error getting document:", error);
+  //     });
+  // }
+ const  getReq = () => {
+  firebase.firestore().collection('AllCases').doc('cada caso').collection('Apelacion')
+    .onSnapshot((querySnapshot) => {
+      const comment = [];
+      querySnapshot.forEach((doc) => {
+        console.log(doc.data())
+        //comment.push({ idPost, id: doc.id, ...doc.data() });
+      });
+      // pintarComentario(comment);
+    });
 };
+getReq()
+return sectionElem;
+};
+// var name, email, photoUrl, uid, emailVerified;
+// if (user != null) {
+//   name = user.displayName;
+//   email = user.email;
+//   photoUrl = user.photoURL;
+//   emailVerified = user.emailVerified;
+//   uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+//                    // this value to authenticate with your backend server, if
+//                    // you have one. Use User.getToken() instead.
+// }
+ 
