@@ -46,7 +46,7 @@ export const formAbogado = () => {
         <div class="d-flex justify-content-center ml-2">
           <table id="mytable" class="table table-striped">
             <thead style="background-color: #325262; color: white">
-              <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white"> BAJAR
+              <th class="th-client" style="width: 10%; font-size: 0.9rem; background-color: #325262; color: white">DESCARGAR
               </th>
               <th class="th-client" style="font-size: 0.9rem;background-color: #325262; color: white">LISTADO DE ITEMS
               </th>
@@ -56,20 +56,20 @@ export const formAbogado = () => {
               </thead>
               <tbody>
               <tr class="tr-form-client">
-                <td><i class="fas fa-upload"> <button type="button" id="download"> Descarga </button> </i></td>
-                <td>xxx</td>
+                <td><button type="button" id="download"> Descarga </button></td>
+                <td>Carta-notarial_mef.doc</td>
                 <td><i class="fas fa-trash-alt"></i></td>
                 <td><i class="fas fa-check-circle"></i></td>
                </tr>
                <tr class="tr-form-client">
                 <td><i class="fas fa-upload"></i></td>
-                <td>xxx1</td>
+                <td>Indecopi</td>
                 <td><i class="fas fa-trash-alt"></i></td>
                 <td><i class="fas fa-check-circle"></i></td>
               </tr>
               <tr class="tr-form-client">
                 <td><i class="fas fa-upload"></i></td>
-                <td>xxx2</td>
+                <td>Plaza Vea denuncia</td>
                 <td><i class="fas fa-trash-alt"></i></td>
                 <td><i class="fas fa-check-circle"></i></td>
               </tr>
@@ -130,13 +130,13 @@ export const formAbogado = () => {
   
 const storage = firebase.storage();
 const btnDownload = sectionElem.querySelector('#download');	  
- const imgRef = storage.ref('1/logosise.png');
+ const imgRef = storage.ref('1/cartanotarial_mef.doc');
   btnDownload.addEventListener('click', () => {
     imgRef.updateMetadata({contentDisposition: 'attachment'})
     .then(() => imgRef.getDownloadURL())
     .then(function(url) {
       const ancle = document.createElement('a');
-      anchor.href = url;	           
+      ancle.href = url;	           
     ancle.download = url;
     ancle.click();	      
   }).catch(function(error) {
